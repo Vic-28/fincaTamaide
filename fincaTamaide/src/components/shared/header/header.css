@@ -4,12 +4,20 @@ header
     place-content: center;
     background-color:#DAC189 ;
     width: 100%;
+    height: 200px;
+    margin-top: -1%;
+    padding-left: 10px;
+    padding-top:10px ;
+    padding-bottom: 10px;
 }
 
 img
 {
-    width: 500px;
-    border: solid;
     position: relative;
-    scale: 0.8;
+    transition: 0.2s;
+}
+
+img:hover
+{
+    scale: 0.9;
 }

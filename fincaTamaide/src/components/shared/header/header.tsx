@@ -1,7 +1,7 @@
 
 import './header.css';
 
-import logo from '/src/assets/img/1-sinFondo.png';
+import logo from '/src/assets/img/1-sinFondo-encogida.png';
 
 function Header() {
     return (
