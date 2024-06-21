@@ -11,13 +11,13 @@ header
     padding-bottom: 10px;
 }
 
-img
+#logo
 {
     position: relative;
     transition: 0.2s;
 }
 
-img:hover
+#logo:hover
 {
     scale: 0.9;
 }
