@@ -30,7 +30,7 @@ function Carrousel() {
     <section className='carrousel'>
       <div id="carouselExampleIndicators" className="carousel slide">
         <div className="carousel-indicators">
-          {fotos.map((foto, index) => (
+          {fotos.map((_, index) => (
             <button 
               key={index} 
               type="button" 
