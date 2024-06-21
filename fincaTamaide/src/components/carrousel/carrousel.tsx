@@ -1,6 +1,6 @@
 import './carrousel.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Importar JavaScript de Bootstrap
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const fotos = [
   'https://i.postimg.cc/nrrDdtvN/IMG-8040.avif',
