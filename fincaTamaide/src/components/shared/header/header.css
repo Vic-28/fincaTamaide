@@ -1,0 +1,15 @@
+header
+{
+    display: grid;
+    place-content: center;
+    background-color:#DAC189 ;
+    width: 100%;
+}
+
+img
+{
+    width: 500px;
+    border: solid;
+    position: relative;
+    scale: 0.8;
+}

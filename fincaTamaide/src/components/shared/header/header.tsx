@@ -1,13 +1,14 @@
+
 import './header.css';
 
+import logo from '/src/assets/img/1-sinFondo.png';
 
 function Header() {
-
     return (
-     <>
-     <h1>Apartado del header</h1>
-  
-     </>
-    )
-  }
-export default Header
+        <header>
+            <img src={logo} alt="Logo Finca Tamaide" />
+        </header>
+    );
+}
+
+export default Header;
