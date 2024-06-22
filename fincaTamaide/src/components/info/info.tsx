@@ -1,4 +1,5 @@
 import './info.css'
+import React from 'react'
 
 function Info()
 {
@@ -34,7 +35,21 @@ function Info()
             <div className='info-separator'/>
 
             <aside className='info-text'>
-                <h1>Info Text</h1>
+                <div className='info-text-description'>
+                    <p className='info-text-description-phr1'>
+                        La vivienda cuenta con una un excelente ambiente para disfrutar de unas vacaciones en Tenerife.
+                        Cuenta con todos los elementos necesarios para disfrutar unas vacaciones ideales en la isla.
+                        Posee barbacoa, piscina y un amplio jardín para disfrutar del clima de la isla con buena compañía.
+                    </p>
+                </div>
+                <div className='info-text-cards'>
+                    <div className='info-text-card'>
+                    <i className="material-symbols-outlined">
+                            pool
+                            </i>
+                        <h5 className='info-text-card-title'>Piscina</h5>
+                    </div>
+                </div>
             </aside>
         </section>
     )

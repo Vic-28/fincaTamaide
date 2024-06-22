@@ -1,12 +1,19 @@
 
 import './header.css';
 
-import logo from '/src/assets/img/1-sinFondo-encogida.png';
+import logo from '/src/assets/img/casa.png';
 
 function Header() {
     return (
         <header>
-            <img id='logo' src={logo} alt="Logo Finca Tamaide" />
+            <div className='logo'>
+                <img className='logo-image' src={logo} alt="Favicon de casa" />
+                <div className='logo-textContainer'>
+                    <h2 className='logo-textContainer-title'>Finca Tamaide</h2>
+                    <div className='logo-textContainer-separator'></div>
+                    <p className='logo-textContainer-subTitle'>Vivienda Vacacional</p>
+                </div>
+            </div>
         </header>
     );
 }
