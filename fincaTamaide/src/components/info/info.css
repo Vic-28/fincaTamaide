@@ -78,7 +78,7 @@
 
 .info-text-card {
     display: grid;
-    border: solid;
+    border: solid 1px #F3A160;
     width: 200px;
     height: 250px;
     justify-content: center;
@@ -107,4 +107,10 @@
 {
     font-size: 1.2em;
     margin-top: 10px;
+}
+
+.info-text-card-icon > *
+{
+    font-size: 75px;
+    color: black;
 }

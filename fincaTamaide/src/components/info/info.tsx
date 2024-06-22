@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import './info.css';
 
 const cardContents = [
-    { icon: 'a', title: 'Piscina' },
-    { icon: 'a', title: 'Jardín' },
-    { icon: 'a', title: 'Barbacoa' },
-    { icon: 'a', title: 'Internet' },
-    { icon: 'a', title: 'Parking Privado' },
-    { icon: 'a', title: 'Acceso Autónomo' }
+    { icon: <span className="material-symbols-outlined">pool</span>, title: 'Piscina' },
+    { icon: <span className="material-symbols-outlined">deceased</span>, title: 'Jardín' },
+    { icon: <span className="material-symbols-outlined">outdoor_grill</span>, title: 'Barbacoa' },
+    { icon: <span className="material-symbols-outlined">wifi</span>, title: 'Internet' },
+    { icon: <span className="material-symbols-outlined">local_parking</span>, title: 'Parking Privado' },
+    { icon: <span className="material-symbols-outlined">key</span> , title: 'Acceso Autónomo' }
 ];
 
 function Info() {
