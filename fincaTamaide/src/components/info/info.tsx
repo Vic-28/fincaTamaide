@@ -1,5 +1,4 @@
 import './info.css'
-import React from 'react'
 
 function Info()
 {
