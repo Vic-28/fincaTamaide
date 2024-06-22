@@ -1,0 +1,7 @@
+.map
+{
+    margin: 50px;
+    display: grid;
+    align-items: center;
+    place-content: center;
+}
