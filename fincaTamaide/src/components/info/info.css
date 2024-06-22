@@ -9,8 +9,7 @@
     place-content: center;
 }
 
-/*Parte de la izquierda*/
-
+/* Parte de la izquierda */
 .info-cards {
     position: relative;
     display: grid;
@@ -53,15 +52,14 @@
     text-align: center;
 }
 
-/*Parte de la derecha*/
-
+/* Parte de la derecha */
 .info-text {
     width: 600px;
     display: grid;
     align-items: center;
     place-content: center;
     justify-items: center;
-    
+    padding-bottom: 20%;
 }
 
 .info-text-title {
@@ -71,59 +69,42 @@
 }
 
 .info-text-cards {
+    margin-top: 10%;
     display: flex;
     gap: 20%;
     justify-content: center;
+    position: relative;
 }
 
 .info-text-card {
-    margin-top: 80px;
     display: grid;
     border: solid;
     width: 200px;
-    height: 200px;
+    height: 250px;
     justify-content: center;
     text-align: center;
     place-content: center;
-    position: relative;
-    transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.info-text-card-left,
-.info-text-card-right {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 50%;
-    height: 100%;
-    cursor: pointer;
-    transition: box-shadow 0.2s, transform 0.2s;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    border-radius: 10%;
 }
 
-.info-text-card-left {
-    left: 0;
+.info-text-card.active {
+    opacity: 1;
 }
 
-.info-text-card-right {
-    right: 0;
+.info-text-card-icon
+{
+    background-color: #E3CFA6;
+    width: 170px;
+    height: 120px;
+    place-content: center;
+    border-radius: 10%;
+    margin-bottom: 10%;
 }
-
-.info-text-card-left:hover,
-.info-text-card-right:hover {
-    z-index: 1;
-}
-
-.info-text-card-left:hover {
-    box-shadow: inset 10px 0 10px -10px rgba(255, 0, 0, 0.2);
-    transform: scale(1.05);
-}
-
-.info-text-card-right:hover {
-    box-shadow: inset -10px 0 10px -10px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-}
-
-.active {
-    display: grid !important;
-    transition: box-shadow 0.2s, transform 0.2s;
+.info-text-card-title
+{
+    font-size: 1.5em;
+    margin-top: 10px;
 }

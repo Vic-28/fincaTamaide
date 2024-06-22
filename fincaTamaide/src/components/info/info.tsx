@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './info.css';
 
 const cardContents = [
@@ -7,23 +7,24 @@ const cardContents = [
     { icon: 'a', title: 'Barbacoa' },
     { icon: 'a', title: 'Internet' },
     { icon: 'a', title: 'Parking Privado' },
-    { icon: 'a', title: 'Llegada Autónoma' }
+    { icon: 'a', title: 'Acceso Autónomo' }
 ];
 
 function Info() {
     const [activeCardIndex, setActiveCardIndex] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
 
-    const handleNextClick = () => {
-        setActiveCardIndex((prevIndex) =>
-            prevIndex === cardContents.length - 1 ? 0 : prevIndex + 1
-        );
-    };
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            if (!isHovered) {
+                setActiveCardIndex((prevIndex) =>
+                    prevIndex === cardContents.length - 1 ? 0 : prevIndex + 1
+                );
+            }
+        }, 3000);
 
-    const handlePrevClick = () => {
-        setActiveCardIndex((prevIndex) =>
-            prevIndex === 0 ? cardContents.length - 1 : prevIndex - 1
-        );
-    };
+        return () => clearInterval(intervalId);
+    }, [isHovered]);
 
     return (
         <section className='info'>
@@ -70,21 +71,21 @@ function Info() {
                         Posee barbacoa, piscina y un amplio jardín para disfrutar del clima de la isla con buena compañía.
                     </p>
                     <p className='info-text-description-phr1'>
-                        Ademas de todas las utilidades para acomodar la mejor estancia posible.
+                        Ademas de todas las utilidades para tener la estancia más cómoda y tranquila posible.
                     </p>
                 </div>
                 <div className='info-text-cards'>
-                    
                     {cardContents.map((card, index) => (
                         <div
                             key={index}
                             className={`info-text-card ${index === activeCardIndex ? 'active' : ''}`}
-                            style={{ display: index === activeCardIndex ? 'grid' : 'none' }}
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
                         >
-                            <div className="info-text-card-left" onClick={handlePrevClick}></div>
+                            <div className='info-text-card-icon'>
                             {card.icon}
+                            </div>
                             <h5 className='info-text-card-title'>{card.title}</h5>
-                            <div className="info-text-card-right" onClick={handleNextClick}></div>
                         </div>
                     ))}
                 </div>
