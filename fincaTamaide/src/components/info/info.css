@@ -1,0 +1,59 @@
+.info
+{
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    height: fit-content;
+}
+
+.info > .info-separator
+{
+    place-content: center;
+}
+
+/*Parte de la izquierda*/
+.info-cards
+{
+    position: relative;
+    display: grid;
+    gap: 10%;
+    margin-left: 5%;
+}
+
+.info-separator
+{
+    border: solid #E3CFA6;
+    height:700px ;
+    width: 1px;
+}
+
+.info-card-right
+{
+    display: flex;
+    border: solid 1px #E3CFA6;
+    align-items: center;
+    width: 500px;
+    padding: 2%;
+    gap:10%;
+    justify-content: center;
+}
+
+.info-card-left
+{
+    display: flex;
+    border: solid 1px #E3CFA6;
+    align-items: center;
+    width: 500px;
+    padding: 2%;
+    gap:10%;
+    justify-content: center;
+}
+
+.info-card-image
+{
+    width: 250px;
+    height: 150px;
+}
+
+
+/*Parte de la derecha*/
