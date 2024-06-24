@@ -1,6 +1,8 @@
 import './weather.css'
 
 
+
+
 function Weather() { 
     return (
         <section className="weather">

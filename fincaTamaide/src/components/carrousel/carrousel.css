@@ -18,3 +18,9 @@
     cursor: pointer;
 }
 
+.visually-hidden
+{
+    color: black;
+    background-color: white;
+
+}
