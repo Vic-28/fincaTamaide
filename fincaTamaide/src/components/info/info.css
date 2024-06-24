@@ -114,3 +114,56 @@
     font-size: 75px;
     color: black;
 }
+
+
+@media screen and ( max-width: 768px)
+{
+    .info
+    {
+        display: grid;
+    }
+    
+    .info-cards
+    {
+        display: grid;
+        gap: 5%;
+        margin-left: 10%;
+    }
+    .info-separator 
+    {
+        display: none;
+    }
+
+    .info-text
+    {
+        margin-top: 10%;
+        font-size: 20px;
+        padding: 10%;
+        position: relative ;
+        left: 7%;
+        margin-bottom: 50%;
+    }
+
+    .info-text-cards
+    {
+        position: relative;
+        left: -2%;
+        padding: 2%;
+    }
+    .info-text-card
+    {
+        width: 300px;
+        height: 220px;
+        display: grid;
+        padding: 10%;
+    }
+    .info-text-card-icon
+    {
+        width: 200px;
+        height: 100px;
+        left: 2%;
+        place-content: center;
+        position: relative;
+    }
+
+}

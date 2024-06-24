@@ -45,3 +45,25 @@ header
     border: solid 1px;
     width: 200px;
 }
+
+
+@media screen and (max-width: 768px)
+{
+
+    header
+    {
+        height: 100px;
+        width: 700px;
+    }
+
+    .logo-image
+    {
+        width: 80px;
+        height: 80px;
+    }
+    .logo-textContainer
+    {
+        font-size: 15px;
+    }
+    
+}
