@@ -44,14 +44,12 @@ header {
 @media screen and (min-width: 320px) and (max-width: 460px) {
     header {
         height: 120px;
-        width: 100%;
     }
 
     .logo
     {
         place-content: center;
         position: relative;
-        right: 34%;
     }
 
     .logo-image {

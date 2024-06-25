@@ -120,7 +120,8 @@
         scale: 0.7;
         display: grid;
         position: relative;
-        right: 17%;
+        right: 20%;
+        margin-top: 4%;
     }
     
     .info-cards {
@@ -134,18 +135,19 @@
     }
     
     .info-text {
-        margin-top: -8%;
+        margin-top: 1%;
         font-size: 20px;
         padding: 10%;
         position: relative;
-        left: 4%;
-        margin-bottom: 50%;
+        margin-bottom: 2%;
+        left: 3%;
     }
     
     .info-text-cards {
         position: relative;
         left: -2%;
         padding: 2%;
+ 
     }
     
     .info-text-card {
