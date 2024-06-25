@@ -83,3 +83,13 @@
     80% { height: 120px; }
     100% { height: auto; .links-nav-icono{display: none;} }
 }
+
+@media screen and (min-width: 400px) and (max-width: 460px)
+{
+    .links
+    {
+        scale: 0.7;
+        left: -1%;
+    }
+
+}
