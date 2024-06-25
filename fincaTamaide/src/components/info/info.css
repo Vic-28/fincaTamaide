@@ -117,7 +117,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 460px) {
     .info {
-        scale: 0.7;
+        scale: 0.6;
         display: grid;
         position: relative;
         right: 20%;
