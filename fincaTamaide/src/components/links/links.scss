@@ -1,0 +1,103 @@
+// Definición de clases para controlar la visibilidad del icono
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+// Definición de la animación keyframes
+@keyframes example {
+    0% { height: 30px; }
+    20% { height: 60px; }
+    60% { height: 90px; }
+    80% { height: 120px; }
+    100% { height: auto; }
+}
+
+// Estilos para el componente links
+.links {
+    position: fixed;
+    color: white;
+    transform: scale(0.8);
+    transition: 0.2s;
+}
+
+.links-nav-icono {
+    font-size: 40px;
+}
+
+.links-nav {
+    width: 80px;
+    background-color: #d24036ea;
+    height: auto;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    transition: background-color 0.6s, border-radius 0.6s, max-height 0.6s;
+    animation-name: example; // Aplicación de la animación
+}
+
+.links-nav:hover {
+    background-color: #ef3426;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.links-nav-logo {
+    width: 50px;
+    filter: invert(100%) brightness(200%);
+}
+
+.link-non-active {
+    border-radius: 20%;
+    max-height: 80px;
+}
+
+.link-non-active img {
+    display: none;
+}
+
+.link-active img {
+    display: block;
+}
+
+.link-active span.links-nav-icono {
+    display: none;
+}
+
+.link-active {
+    border-radius: 10%;
+    transition: 0.6s;
+    max-height: 500px;
+}
+
+.links-nav-icono-salida {
+    display: none;
+    transition: 0.6s;
+}
+
+.link-active .links-nav-icono-salida {
+    display: block;
+    position: relative;
+    left: 30%;
+    transition: 0.6s;
+}
+
+.links-nav-icono:hover,
+.links-nav-icono-salida:hover,
+.links-nav-logo:hover {
+    filter: brightness(80%);
+    transition: 0.2s;
+}
+
+@media screen and (min-width: 400px) and (max-width: 460px) {
+    .links {
+        transform: scale(0.7);
+        left: -1%;
+    }
+}

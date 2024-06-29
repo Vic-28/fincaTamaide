@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './links.css';
+import './links.scss';
 import airbnbLogo from '/src/assets/img/airbnb.png';
 import bookingLogo from '/src/assets/img/brand-booking.svg';
 

@@ -1,1 +1,3 @@
 node_modules/.bin/jsesc
+node_modules/@babel/runtime/helpers/isNativeFunction.js
+/node_modules

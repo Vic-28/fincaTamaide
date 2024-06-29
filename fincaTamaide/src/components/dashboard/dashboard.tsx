@@ -3,7 +3,7 @@ import Info from '../info/info'
 //import Map from '../map/map'
 //import Weather from '../weather/weather'
 import Links from '../links/links'
-import './dashboard.css'
+import './dashboard.scss'
 
 
 function Dashboard() {

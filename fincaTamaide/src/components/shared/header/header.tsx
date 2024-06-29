@@ -1,5 +1,5 @@
 
-import './header.css';
+import './header.scss';
 
 import logo from '/src/assets/img/casa.png';
 

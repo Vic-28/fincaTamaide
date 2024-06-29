@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './info.css';
+import './info.scss';
 
 const cardContents = [
     { icon: <span className="material-symbols-outlined">pool</span>, title: 'Piscina' },
