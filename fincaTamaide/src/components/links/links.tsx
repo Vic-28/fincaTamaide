@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './links.scss';
-import airbnbLogo from '/src/assets/img/airbnb.png';
-import bookingLogo from '/src/assets/img/brand-booking.svg';
+import airbnbLogo from '../../assets/img/airbnb.png';
+import bookingLogo from '../../assets/img/brand-booking.svg';
 
 const Links: React.FC = () => {
     useEffect(() => {
@@ -14,7 +14,7 @@ const Links: React.FC = () => {
         };
 
         const handleCloseClick: EventListener = (event) => {
-            event.stopPropagation(); // Prevent triggering the parent click event
+            event.stopPropagation(); 
             navElement.classList.add('link-non-active');
             navElement.classList.remove('link-active');
         };

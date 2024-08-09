@@ -1,7 +1,7 @@
 
 import './header.scss';
 
-import logo from '/src/assets/img/casa.png';
+import logo from '../../../assets/img/casa.png';
 
 function Header() {
     return (

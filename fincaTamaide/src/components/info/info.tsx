@@ -81,7 +81,7 @@ function Info() {
                             className={`info-text-card ${index === activeCardIndex ? 'active' : ''}`}
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
-                        >
+                        role='info'>
                             <div className='info-text-card-icon'>
                             {card.icon}
                             </div>
