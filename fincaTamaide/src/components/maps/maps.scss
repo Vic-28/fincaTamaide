@@ -1,0 +1,25 @@
+.maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 5%;
+    padding: 4%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.maps-iframe {
+    border: solid 3px #E3CFA6;
+    border-radius: 2%;
+    padding: 2px;
+}
+
+@media screen and (min-width: 390px) and (max-width: 460px){
+    .maps
+    {
+        position: relative;
+        right: 19%;
+        margin-top: 1%;
+    }
+}
