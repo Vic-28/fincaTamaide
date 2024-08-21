@@ -71,7 +71,7 @@ function Info() {
                         Posee barbacoa, piscina y un amplio jardín para disfrutar del clima de la isla con buena compañía.
                     </p>
                     <p className='info-text-description-phr1'>
-                        Ademas de todas las utilidades para tener la estancia más cómoda y tranquila posible.
+                        Además de todas las utilidades para tener la estancia más cómoda y tranquila posible.
                     </p>
                 </div>
                 <div className='info-text-cards'>
