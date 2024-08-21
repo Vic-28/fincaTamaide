@@ -3,30 +3,31 @@ import { useEffect } from 'react';
 
 function Maps() {
     
-    const checkWindowSize = (width) => {
-        const iframe = document.querySelector('.maps-iframe');
+    const checkWindowSize = (width:number) => {
+        const iframe = document.querySelector('.maps-iframe') as HTMLIFrameElement;
         
-        if (width < 460) {
-            iframe.style.width = '320px';
-            iframe.style.height = '225px';
-        } else {
-            iframe.style.width = '600px';
-            iframe.style.height = '450px';
+        if (iframe) { 
+            if (width < 460) {
+                iframe.style.width = '320px';
+                iframe.style.height = '225px';
+            } else {
+                iframe.style.width = '600px';
+                iframe.style.height = '450px';
+            }
         }
     };
 
     useEffect(() => {
-        // Check the initial size
+
         checkWindowSize(window.screen.width);
 
-        // Add event listener to check on resize
+ 
         const handleResize = () => {
             checkWindowSize(window.screen.width);
         };
 
         window.addEventListener('resize', handleResize);
 
-        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener('resize', handleResize);
         };
