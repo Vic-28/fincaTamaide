@@ -36,7 +36,7 @@ const Links: React.FC = () => {
 
     const goToAirbnb = (event: React.MouseEvent<HTMLImageElement>) => {
         event.stopPropagation();
-        window.location.href = 'https://www.airbnb.es/rooms/49413191?adults=1&children=0&enable_m3_private_room=true&infants=0&location=San%20Miguel%20de%20Abona%2C%20Espa%C3%B1a&pets=0&search_mode=regular_search&check_in=2024-07-01&check_out=2024-07-06&source_impression_id=p3_1719072932_P3UItdNMq6t-kCJr&previous_page_section_name=1001&federated_search_id=97963ca0-f4af-40b7-87a7-e00d46297100&translate_ugc=false';
+        window.location.href = 'https://www.airbnb.es/rooms/49413191?guests=1&adults=1&s=67&unique_share_id=2a4197e9-8510-413e-a079-72cc96ffed19';
     };
 
     return (
