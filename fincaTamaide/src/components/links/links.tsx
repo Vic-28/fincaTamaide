@@ -19,7 +19,7 @@ const Links: React.FC = () => {
         };
 
         const handleCloseClick: EventListener = (event) => {
-            event.stopPropagation(); 
+            event.stopPropagation();
             navElement.classList.add('link-non-active');
             navElement.classList.remove('link-active');
         };
@@ -48,8 +48,6 @@ const Links: React.FC = () => {
         event.stopPropagation();
         window.location.href = 'https://www.instagram.com/ftamaide/';
     };
-
-
     return (
         <aside className='links'>
             <nav className='links-nav link-non-active'>
@@ -75,7 +73,7 @@ const Links: React.FC = () => {
                     className='links-nav-logo'
                     src={bookingLogo}
                     alt='Booking logo'
-                    style={{ display: 'none'}}
+                    style={{ display: 'none' }}
                 />
             </nav>
         </aside>
